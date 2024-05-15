@@ -15,6 +15,8 @@
     <artifactId>mssc-brewery-bom</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <description>Brewery BOM Project - common deps for brewery service</description>
+
     <packaging>pom</packaging>
 
     <licenses>
@@ -171,6 +173,11 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
@@ -187,6 +194,10 @@
                 <exclusion>
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
