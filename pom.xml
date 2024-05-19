@@ -85,6 +85,11 @@
                 <artifactId>spring-statemachine-core</artifactId>
                 <version>${spring-statemachine-core}</version>
             </dependency>
+            <dependency>
+                <groupId>net.jodah</groupId>
+                <artifactId>failsafe</artifactId>
+                <version>${failsafe.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.junit.platform</groupId>
@@ -99,9 +104,10 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>net.jodah</groupId>
-                <artifactId>failsafe</artifactId>
-                <version>${failsafe.version}</version>
+                <groupId>org.springframework.statemachine</groupId>
+                <artifactId>spring-statemachine-test</artifactId>
+                <version>${spring-statemachine-core}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
